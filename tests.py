@@ -35,7 +35,7 @@ class TestBooksCollector:
         new_book.add_new_book('Гордость и предубеждение и зомби')
         assert (len(new_book.get_books_rating()) == 1)
 
-    def test_set_book_rating_new_rating_for_new_one_book(self, new_one_book):
+    def test_set_book_rating_rating_13(self, new_one_book):
         new_one_book.set_book_rating('Найди время', 13)
         assert new_one_book.get_book_rating('Найди время') == 1
 
@@ -43,7 +43,7 @@ class TestBooksCollector:
         assert new_collection.get_book_rating('Найди время') == 8 and \
                new_collection.get_book_rating('Справочник Python') == 9
 
-    def test_get_books_with_specific_rating_books_rated_10(self, new_collection):
+    def test_get_books_with_specific_rating_rated_10(self, new_collection):
         assert new_collection.get_books_with_specific_rating(10) == ['Грокаем алгоритмы']
 
     def test_get_books_rating_new_dictionary(self, comparison_dictionary, new_collection):
