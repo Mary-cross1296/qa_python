@@ -14,16 +14,6 @@ def new_one_book():
     return collector
 
 @pytest.fixture
-def comparison_dictionary():
-    dictionary = {
-        'Найди время': 8,
-        'Грокаем алгоритмы': 10,
-        'Справочник Python': 9,
-        'Победи прокрастинацию': 7
-    }
-    return dictionary
-
-@pytest.fixture
 def new_collection():
     collector = BooksCollector()
     collector.add_new_book('Найди время')
