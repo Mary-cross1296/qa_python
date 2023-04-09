@@ -7,4 +7,5 @@
 6) test_get_books_with_specific_rating_rated_10 - список книг с рейтингом 10
 7) test_get_books_rating_new_dictionary - получение словаря 
 8) test_add_book_in_favorites_two_books_in_favorites - добавление 2х книг в избранное
-9) test_delete_book_from_favorites_delete_one_book - удаление одной книги из избранного
+9) test_delete_book_from_favorites_delete_one_book_positive - удаление одной книги из избранного, позитивная проверка
+10) test_delete_book_from_favorites_delete_one_book_negative - удаление одной книги из избранного, негативная проверка
